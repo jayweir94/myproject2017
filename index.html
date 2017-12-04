@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>My Project</title>
+</head>
+<style>
+body {
+    background-color: Lightgreen;
+}
+</style>
+<body>
+
+  <h1>Irish Sport</h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#FootballButton").click(function(){
+        $.get("/football", function(data, status){
+		$("#Sports").text(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#RugbyButton").click(function(){
+        $.get("/Rugby", function(data, status){
+		$("#Sports").text(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#GAAButton").click(function(){
+        $.get("/GAA", function(data, status){
+		$("#Sports").html(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#GAAButton").click(function(){
+        $.get("/GAA.html", function(data, status){
+		
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#FootballButton").click(function(){
+        $.get("/Football", function(data, status){
+		$("#Sports").html(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#RugbyButton").click(function(){
+        $.get("/Rugby", function(data, status){
+		$("#Sports").html(data);
+        });
+    });
+});
+
+
+</script>
+  
+  
+</head>
+
+  
+ <input type="submit" name="Football" id="FootballButton" value="Load football">
+ <input type="submit" name="Rugby" id="RugbyButton" value="Load Rugby">
+    <input type="submit" name="GAA" id="GAAButton" value="Load GAA">
+	
+   <div id ="Sports">
+
+   <P> This website is Deadacated to irish sports. from football to rugby and are very own Gaelic Athletic Association.
+   in this one page web application you will get to know a small bit about our sporting history</p>
+   <H1> Football</h1> <h1>Rugby</h1> <H1>Gaa</h1>
+   <h2>How sports brings people together</h2>
+   <p>A sporting event can change anyones mood, from the first whistle to the final whistle. 80 plus minutes of pure raw emotion that cant be matched.
+   just look at the all ireland final for the last two years, Dunlin vs Mayo 3 great games that would have any GAA at the edge of there seat. But for those mayo
+   and dublin supporters 70 minutes of agany and extacy for the victors.</P>
+   <p>Football Brings Ireland togther more than any other sport, look at the euro 2016 tournament the irish fans had the best crack out in france and where given an award for there 
+   kindness. football is one of the worlds biggest sports and the irish fans have shown in recent years that we will go to hell and back to follow our nation. 
+   the victory vs wales few weeks back gave us hope to get to the world cup, but as we all know was not to be  5-1 loss to Denmark, but we still have our heads up high..and we always will</p>
+   
+   </div>
+   
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>My Project</title>
+</head>
+<style>
+body {
+    background-color: LightGreen;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#IrishChampions").click(function(){
+        $.get("/Champs", function(data, status){
+		$("#Sports").text(data);
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#NextChamps").click(function(){
+        $.get("/2018", function(data, status){
+		$("#Sports").text(data);
+        });
+    });
+});
+
+</script>
+<body>
+ <link rel="stylesheet" type="text/css" href="css/styles.css">
+ <img src="C:\Users\jason weir\Desktop\data\Public\Images\mayo.jpg">
+<H1>Mayo GAA </h1>
+<h2>All Ireland Final winning years</h2>
+<style>
+table, td, th {
+    border: 1px solid red;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+    <th>Year</th>
+    <th>Against</th> 
+    <th>Score</th>
+  </tr>
+  <tr>
+    <td>1936</td>
+    <td>Laois</td>
+    <td>4-11/0-5</td>
+  </tr>
+  <tr>
+    <td>1950</td>
+    <td>Louth</td>
+    <td>2-5/1-6</td>
+  </tr>
+  <tr>
+    <td>1951</td>
+    <td>Mrath</td>
+    <td>2-8/0-9</td>
+  </tr>
+</table>
+
+<input type="submit" name="Champs" id="IrishChampions" value="Load Champs">
+<input type="submit" name="2018" id="NextChamps" value="Load 2018">
+
+<P> Mayo have lost 13 All ireland Finals out of the 16 finals they have played in</p>
+<h2> Mayo 2017 All starts</h2>
+<p>List of Mayo 2017 All Stars</p>
+<table style="width:30%">
+  <tr>
+    <th>David Clarke</th>
+  </tr>
+  <tr>
+    <th>Chris Barrett</th>
+  </tr>
+  <tr>
+    <th>Keith Higgins</th>
+  </tr>
+  <tr>
+    <th>Colm Boyle</th>
+  </tr>
+  <tr>
+    <th>Aidan O'Shea</th>
+  </tr>
+  <tr>
+    <th>Andy Moran(2017 footballer of the year)</th>
+  </tr>
+
+
+<script src="javascript/script.js"></script>

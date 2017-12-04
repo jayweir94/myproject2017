@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>My Project</title>
+</head>
+<style>
+body {
+    background-color: LightGreen;
+}
+</style>
+<body>
+ <link rel="stylesheet" type="text/css" href="css/styles.css">
+<style>
+h1 {
+    text-align: center;
+}
+</style>
+<h1>Football In Ireland</h1>
+<p>The League of Ireland together with the Football Association of Ireland, is one of the two main governing bodies responsible for organising association football in the Republic of Ireland.
+ The term was originally used to refer to a single division league. 
+ However today the League of Ireland features five divisions – the Premier Division, the First Division, an U19 Division, an U17 Division and an U15 Division.
+ The League of Ireland has always worked closely with the FAI and in 2006 the two bodies formally merged.</p>
+<h3>Hit Button for League of Ireland Champions</h3>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#ChampionsButton").click(function(){
+        $.get("/Champions", function(data, status){
+		$("#Sports").text(data);
+        });
+    });
+});
+
+</script>
+<input type="submit" name="Champions" id="ChampionsButton" value="Load Champions">
+<style>
+<style>
+h1 {
+    text-align: center;
+}
+</style>
+<h1>The Republic of Ireland</h1>
+<p> The republic of ireland have only been in a hand full of Fifa World Cup Tournaments in there history</P>
+<table style="width:30%">
+  <tr>
+    <th>Year</th>
+    <th>Finish</th> 
+  </tr>
+  <tr>
+    <th>1980</th>
+    <th>8th</th> 
+  </tr>
+<tr>
+    <th>1994</th>
+    <th>15h</th> 
+  </tr>
+  <tr>
+    <th>2002</th>
+    <th>12th</th> 
+  </tr>
+  </table
+
+
+
+
+
+
